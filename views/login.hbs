@@ -1,0 +1,84 @@
+{{!  koddagi class="btn btn-primary" va class="mb-3" qismlaridagi belgilar va nomlar.
+Bu class'lar — Bootstrap nomli CSS kutubxonasiga tegishli.
+Bootstrap — bu tayyor yozilgan CSS klasslari to‘plami bo‘lib, u yordamida sayt dizaynini tez va chiroyli qilish mumkin. 
+
+fetch — bu brauzer orqali serverga murojaat qilish va u yerda yozilgan ma’lumotlarni olish uchun ishlatiladi.
+}}
+
+{{! savolar: ID va NAME ning farqi , BOOTSTRAP , FETCH }}
+
+<h2 style="text-align: center; margin-bottom: 20px;">Login</h2>
+<form
+  id="loginForm"
+  style="
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
+>
+  <div style="margin-bottom: 15px;">
+    {{! ID (korish|ulash)- label ni inputga bog'lash un ishlatiladi (for va id bir hil , namunadagidek:) }}
+    {{! NAME (yuborish) - name — bu form ma’lumotlarini serverga yuborishda kerak,Foydalanuvchi formani yuborganida (value sini ham bersa),
+    email=<value> sifatida serverga boradi. }}
+    <label
+      for="email"
+      class="form-label"
+      style="display: block; margin-bottom: 6px; font-weight: bold;"
+    >Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="form-control"
+      style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;"
+    />
+  </div>
+  <div style="margin-bottom: 15px;">
+    <label
+      for="password"
+      class="form-label"
+      style="display: block; margin-bottom: 6px; font-weight: bold;"
+    >Password</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      class="form-control"
+      value="1234567"
+      style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;"
+    />
+  </div>
+
+  {{! <button type="submit" class="btn btn-primary">Submit</button> }}
+
+  <button
+    type="submit"
+    style="
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  "
+    onmouseover="this.style.backgroundColor='#0056b3'"
+    onmouseout="this.style.backgroundColor='#007bff'"
+  >
+    Submit
+  </button>
+
+</form>
+<script src="./js/script_author.js"></script>
+<script>
+  login()
+</script>
+
+{{! 
+fetch ning aynan qaysi qismida serverga yuborayotgan malumotimizni
+turini korsatib ketish mumkin
+}}

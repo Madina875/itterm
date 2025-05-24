@@ -1,0 +1,28 @@
+after: 31:38
+
+eskiz.uz
+boshqarish paneliga o'tish
+login parol -...
+<vmmanager accaunt opened>
+copy IPadsress
+get login and password from gmail searching vps
+terminal:
+ssh root@<ip address>
+if it outputting fingerprint write 'yes'
+and then write password from gmail which came
+write : ls -la
+to delete nodejs :     sudo apt-get purge nodejs and then say yes
+
+sudo apt update
+sudo apt install curl <if curl already exists you dont need it>
+curl -sL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
+nano nodesource_setup.sh
+
+< to exit overall : cd .. || ls -la  : noutes files || ti enter to tilda : cd ~  >
+
+sudo bash nodesource_setup.sh
+sudo apt install nodejs
+look:   node -v
+
+git --version
+
