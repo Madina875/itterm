@@ -25,4 +25,18 @@ sudo apt install nodejs
 look:   node -v
 
 git --version
+<open github repository and push there all what you should>
+in the terminal routes at first open file mkdir itterm and check with ls 
+in this file write git init and then git pull <link of your repo>
+after it write ls -la and you can see your project in server.
+
+you should create default.json in the config because we didnt send it to the github
+or codes in dotenv you should copy and save to server
+write: cd config/
+ls -la
+to create default.json in config : nano default.json
+copy all codes from your own default and paste it in nano
+cd ..
+write : npm i  to check if node_modules... exists
+node app
 
